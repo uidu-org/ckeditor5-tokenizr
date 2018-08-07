@@ -20,7 +20,10 @@ module.exports = {
             }
           }
         ],
-        exclude: /node_modules/
+        include: [
+          path.resolve(__dirname, "src"),
+          path.resolve(__dirname, "./node_modules/@ckeditor/")
+        ]
       },
       {
         // Or /ckeditor5-[^/]+\/theme\/icons\/[^/]+\.svg$/ if you want to limit this loader
